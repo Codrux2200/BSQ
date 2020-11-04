@@ -43,15 +43,15 @@ int  array_2d_sum(int **arr , int  nb_rows , int  nb_cols)
             calc = calc + arr[i][v];
         }
     }
-    if (count == 0){
+    if (calc == 0){
         my_putstr("0");
         my_putstr("\n");
-    } else if (count < 0){
+    } else if (calc < 0){
         my_putstr("-");
-        my_put_nbr(count * -1);
+        my_put_nbr(calc * -1);
         my_putstr("\n");
     } else {
-        my_put_nbr(count);
+        my_put_nbr(calc);
         my_putstr("\n");
     }
 }
