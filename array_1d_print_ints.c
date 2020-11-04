@@ -6,15 +6,6 @@
 */
 #include <stddef.h>
 
-int main(){
-int *arr = malloc(2 * sizeof(int));
-    arr[0] = 56;
-    arr[1] = 6;
-    array_1d_print_ints(arr, 0);
-}
-
-
-
 int my_putstr(char const *str)
 {
     for (int i = 0; str[i] != '\0'; i++)
