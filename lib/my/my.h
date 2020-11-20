@@ -13,8 +13,9 @@
 #include <unistd.h>
 int my_getnbr(char *str);
 int  bsq(char  const *filepath, int size);
-void tabs_creator(char *buffer, int size);
+void tabs_creator(char *buffer, int size, char const *filepath, int v);
 void find_rec(char **tab);
 int my_putstr(char const *str);
-int opp(char **tab, int v);
+void opp(char **tab, int v, int multip_save, int *coord);
+int chiffre(char const*filepath);
 #endif /* !MY_H_ */

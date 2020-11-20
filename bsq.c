@@ -9,31 +9,38 @@
 int main(int ac , char **av)
 {
     bsq(av[1], 0);
+    return (0);
 }
 
-int  bsq(char  const *filepath, int size)
+int bsq(char  const *filepath, int size)
 {
     int fd = open(filepath, O_RDONLY);
     char *buffer;
 
-    buffer = malloc( 214748 * sizeof(char *)); 
+    buffer = malloc( 214748 * sizeof(char *));
     size = read(fd, buffer, 214748);
-    close(fd); 
+    close(fd);
     if (fd == -1) {
         write(2,"ERROR LOADING MAP\n", 19);
         return(84);
     } else {
-        buffer[size] = '\n';
-        tabs_creator(buffer, size);
+        if (size < 1){
+            write(2,"ERROR MAP EMPTY\n", 17);
+            return(84);
+        } else {
+            buffer[size] = '\n';
+            tabs_creator(buffer, size, filepath, 0);
+        }
     }
 }
 
-void tabs_creator(char *buffer, int size)
+void tabs_creator(char *buffer, int size, const char *filepath, int v)
 {
     char **tab = malloc(size * sizeof(char *));
     char *ligne = malloc(size * sizeof(char *));
-    int v = 0;
 
+    if (chiffre(filepath) <= 5)
+        size++;
     for (int i = 0, s = 0; i != size; i++) {
         if (buffer[i] == '\n'){
             ligne[s] = buffer[i];
@@ -46,7 +53,8 @@ void tabs_creator(char *buffer, int size)
             s++;
         }
     }
-    opp(tab, v);
+    int *coord;
+    opp(tab, v, 1, coord);
 }
 
 int test(char **tab, int i, int s, int multip)
@@ -68,9 +76,9 @@ int test(char **tab, int i, int s, int multip)
 void trace(int *coord, int multip_save, int v, char **tab)
 {
     int save_s;
-    
+
     for (int i = 1, s = 0; i != v; s++) {
-        if ((i >= coord[0] && i < coord[0] + multip_save - 1) 
+        if ((i >= coord[0] && i < coord[0] + multip_save - 1)
         && (s >= coord[1] && s < coord[1] + multip_save - 1)) {
                 write(1, "x", 1);
         } else if (tab[i][s] == '\n') {
