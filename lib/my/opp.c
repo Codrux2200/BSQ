@@ -26,7 +26,7 @@ int opp(char **tab, int v)
             }
         }
         if (test(tab, i, s, multip) == 0) {
-            if (multip > multip_save){
+            if (multip >= multip_save){
                 multip_save = multip;
                 coord[0] = i;
                 coord[1] = s;
