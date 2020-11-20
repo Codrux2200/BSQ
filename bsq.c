@@ -20,6 +20,7 @@ int  bsq(char  const *filepath, int size)
     size = read(fd, buffer, 214748);
     close(fd); 
     if (fd == -1) {
+        write(2,"ERROR LOADING MAP\n", 19);
         return(84);
     } else {
         buffer[size] = '\n';
@@ -32,6 +33,7 @@ void tabs_creator(char *buffer, int size)
     char **tab = malloc(size * sizeof(char *));
     char *ligne = malloc(size * sizeof(char *));
     int v = 0;
+
     for (int i = 0, s = 0; i != size; i++) {
         if (buffer[i] == '\n'){
             ligne[s] = buffer[i];
@@ -51,6 +53,7 @@ int test(char **tab, int i, int s, int multip)
 {
     int save_s = s;
     int save_i = i;
+
     for(; i != save_i + multip; i++) {
         s = save_s;
         for (; s != save_s + multip; s++) {
