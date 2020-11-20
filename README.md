@@ -1,5 +1,5 @@
 **You wont to now where is the biggest square in your map ??
-That's it's possible with this program**
+That is possible with this program**
 
 **TO COMPILE IT:**
 
