@@ -70,7 +70,8 @@ void trace(int *coord, int multip_save, int v, char **tab)
     int save_s;
     
     for (int i = 1, s = 0; i != v; s++) {
-        if ((i >= coord[0] && i < coord[0] + multip_save - 1) && (s >= coord[1] && s < coord[1] + multip_save - 1)) {
+        if ((i >= coord[0] && i < coord[0] + multip_save - 1) 
+        && (s >= coord[1] && s < coord[1] + multip_save - 1)) {
                 write(1, "x", 1);
         } else if (tab[i][s] == '\n') {
             s = -1;
