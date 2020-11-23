@@ -1,5 +1,5 @@
-**You wont to now where is the biggest square in your map ??
-That is possible with this program**
+**You want to know where is the biggest square in your map ?? 
+This is possible with this program**
 
 **TO COMPILE IT:**
 
@@ -7,7 +7,7 @@ That is possible with this program**
 ```
 make
 ```
-**if that's not work it's probably beaucause make command is not installed on your pc .**
+**if it doesn’t work, it's probably because make command is not installed on your pc .**
 
 **To solve that, execute in ubuntu or Mac OS:**
 ```
@@ -19,9 +19,9 @@ sudo dnf install make
 ```
 **after this you will able to create the ./bsq compile file .**
 
-** IF YOU ARE ON WINDOWS COMPUTER'S, DON'T WORRY, YOU'R BE ABLE TO USE THIS PROGRAM BY USING THE **bsq.exe** WITCH IS IN THE REPOSITORY**
+** IF YOU ARE ON WINDOWS' COMPUTER, DON'T WORRY, YOU'LL BE ABLE TO USE THIS PROGRAM BY USING THE **bsq.exe** WITCH IS IN THE REPOSITORY**
 
-to make this program work ,you need to define a map with **'o'** as obstacles and **'.'** as empty place.
+to make this program work ,you need to define a map with **'o'** as obstacles and **'.'** as empty places.
 The map should look like 
 ```
 5
@@ -32,11 +32,11 @@ ooooo..oooooooo
 oooooooo....ooo
 ......ooooooooo
 ```
-where the number above the map is the number of (colums - 1)
+the number above the map is the number of (lines - 1)
 
-*why -1 SHHUUUTTT DON'T ASK* 
+*why -1 ?? SHHUUUTTT DON'T ASK* 
 
-To execute the program, do in a terminal witch is on the repository's folder on your pc:
+To execute the program, do in a terminal where the repository folder on your pc:
 
 on linux or mac os:
 ```
