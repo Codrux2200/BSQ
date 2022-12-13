@@ -17,7 +17,7 @@ on fedora:
 ```
 sudo dnf install make
 ```
-on Macos:
+on Mac os:
 ```
 sudo brew install make
 ```
