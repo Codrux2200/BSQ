@@ -16,7 +16,7 @@ int *return_tab(int* coord, int i, int s)
 
 void opp(char **tab, int v, int multip_save, int *coord)
 {
-    coord = malloc(2 * sizeof(int *));
+    coord = malloc(2 * sizeof(int));
     for (int i = 0, s = 0, multip = 1; i != v - 1; s++) {
         if (tab[i][s] == '\n') {
             s = 0;
