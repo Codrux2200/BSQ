@@ -45,11 +45,11 @@ To execute the program, do in a terminal where the repository folder on your pc:
 
 on linux or mac os:
 ```
-./bsq filepath of the map
+./bsq [filepath of the map]
 ```
 on windows:
 ```
-./bsq.exe filepath of the map
+./bsq.exe [filepath of the map]
 ```
 
 for exemple, the resolve of this map would be :
