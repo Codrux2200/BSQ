@@ -41,7 +41,7 @@ the number above the map is the number of (lines - 1)
 
 *why -1 ?? SHHUUUTTT DON'T ASK* 
 
-To execute the program, do in a terminal where the repository folder on your pc:
+To execute the program, execute in a terminal opened at the repository folder on your pc:
 
 on linux or mac os:
 ```
