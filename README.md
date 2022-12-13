@@ -26,7 +26,7 @@ sudo brew install make
 
 ** IF YOU ARE ON WINDOWS' COMPUTER, DON'T WORRY, YOU'LL BE ABLE TO USE THIS PROGRAM BY USING THE **bsq.exe** WITCH IS IN THE REPOSITORY**
 
-to make this program work ,you need to define a map with **'o'** as obstacles and **'.'** as empty places.
+to make this program work, you need to define a map with **'o'** as obstacles and **'.'** as empty places.
 The map should look like 
 ```
 5
