@@ -9,7 +9,7 @@ make
 ```
 **if it doesn’t work, it's probably because make command is not installed on your pc .**
 
-**To solve that, execute in ubuntu or Mac OS:**
+**To solve that, execute in ubuntu:**
 ```
 sudo apt-get install make
 ```
@@ -17,6 +17,11 @@ on fedora:
 ```
 sudo dnf install make
 ```
+on Macos:
+```
+sudo brew install make
+```
+
 **after this you will able to create the ./bsq compile file .**
 
 ** IF YOU ARE ON WINDOWS' COMPUTER, DON'T WORRY, YOU'LL BE ABLE TO USE THIS PROGRAM BY USING THE **bsq.exe** WITCH IS IN THE REPOSITORY**
