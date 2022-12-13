@@ -22,7 +22,7 @@ on Mac os:
 sudo brew install make
 ```
 
-**after this you will able to create the ./bsq compile file .**
+**after this you will be able to create the ./bsq compile file .**
 
 ** IF YOU ARE ON WINDOWS' COMPUTER, DON'T WORRY, YOU'LL BE ABLE TO USE THIS PROGRAM BY USING THE **bsq.exe** WITCH IS IN THE REPOSITORY**
 
